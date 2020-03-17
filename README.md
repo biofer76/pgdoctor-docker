@@ -7,6 +7,7 @@ Dockerized version of `pgdoctor`, a simple and lightweight web service used to d
 ## Requirements:
 * Docker
 * Docker Compose
+* make
 
 ## Configure
 

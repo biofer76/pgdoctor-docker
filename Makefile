@@ -11,7 +11,7 @@ build: ## Compile pgdoctor source code and build Docker image
 	@docker build -t pgdoctor .
 
 run:  ## Run pgdoctor container in background
-	@docker run -d --restart=always --env-file=config.env -p ${WEBSERVER_PORT}:8071 --name pgdoctor pgdoctor:latest
+	@docker run -d --restart=always --network=${DOCKER_NETWORK} --env-file=config.env -p ${WEBSERVER_PORT}:8071 --name pgdoctor pgdoctor:latest
 
 stop: ## Stop and remove pgdoctor container
 	@docker stop pgdoctor
