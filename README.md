@@ -1,4 +1,4 @@
-# PGDoctor - Docker Version
+# pgDoctor - Docker Version
 
 Original Project available here: https://github.com/thumbtack/pgdoctor
 
@@ -18,21 +18,21 @@ Display the commands help:
 make help
 ``` 
 
-## Run pgdoctor check
+## Run pgdoctor webservice
 
-Build Docker image
-
+**Build Docker image**  
+First of all you have to compile pgdoctor and build the Docker image used to run the pgdoctor container
 ```
 make build
 ``` 
 
-Run on an exiting PostgreSQL Database
+If you want to check **an exiting PostgreSQL Database** with run a the Docker container with:  
 
 ```
 make run 
 ```
 
-Run PostgreSQL Database and pgdoctor 
+If you need to run a **new PostgreSQL Database** checked through pgdoctor: 
 
 ```
 make full
