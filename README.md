@@ -11,7 +11,7 @@ Dockerized version of `pgdoctor`, a simple and lightweight web service used to d
 
 ## Configure
 
-Set you PostgreSQL configuration in `config.env` file
+Create a new `config.env` configuration file with PostgreSQL and webservice settings
 
 Display the commands help:
 
