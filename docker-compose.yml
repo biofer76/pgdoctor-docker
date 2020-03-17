@@ -1,0 +1,20 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:9.6
+    hostname: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASS}
+      - POSTGRES_DB=${POSTGRES_DBNAME}
+  pgdoctor:
+    build: .
+    image: pgdoctor:latest
+    hostname: pgdoctor
+    ports:
+      - "${WEBSERVER_PORT}:8071"
+    env_file:
+      - config.env
+
