@@ -11,7 +11,9 @@ Dockerized version of `pgdoctor`, a simple and lightweight web service used to d
 
 ## Configure
 
-Create a new `config.env` configuration file with PostgreSQL and webservice settings
+Create a new `config.env` file with PostgreSQL and webservice settings, you can duplicate `config.example.env` file.
+
+## Run pgdoctor webservice
 
 Display the commands help:
 
@@ -19,10 +21,9 @@ Display the commands help:
 make help
 ``` 
 
-## Run pgdoctor webservice
-
 **Build Docker image**  
 First of all you have to compile pgdoctor and build the Docker image used to run the pgdoctor container
+
 ```
 make build
 ``` 
